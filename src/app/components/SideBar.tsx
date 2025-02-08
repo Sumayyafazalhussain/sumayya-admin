@@ -60,7 +60,7 @@ const SideBar = () => {
         <motion.div
           initial={{ y: -20 }}
           animate={{ y: 0 }}
-          className="flex items-center justify-between p-4 bg-[#A67B5B] text-white w-full fixed top-0 left-0 z-10 md:hidden shadow-lg"
+          className="flex items-center justify-between p-4 bg-[#1E3A5F] text-white w-full fixed top-0 left-0 z-10 md:hidden shadow-lg"
         >
           <h1 className="text-xl font-bold tracking-tight">Anna Dashboard</h1>
           <button
@@ -77,10 +77,10 @@ const SideBar = () => {
         variants={sidebarVariants}
         initial="closed"
         animate={isMobile ? (sidebarOpen ? "open" : "closed") : "open"}
-        className="fixed top-0 left-0 w-64 bg-[#A67B5B] text-white h-full z-20 shadow-2xl"
+        className="fixed top-0 left-0 w-64 bg-[#1E3A5F] text-white h-full z-20 shadow-2xl"
       >
         <div className="flex justify-between items-center p-4 border-b border-gray-700">
-          <h1 className="text-xl font-bold tracking-tighter">Comforty-Dashboard</h1>
+          <h1 className="text-xl font-bold tracking-tighter">Furniture-zary</h1>
           {isMobile && (
             <button
               onClick={() => setSidebarOpen(false)}
@@ -103,8 +103,8 @@ const SideBar = () => {
                 href={item.href}
                 className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-300 group
                   ${pathname === item.href 
-                    ? "bg-[#B88E6A] shadow-lg"
-                    : "hover:bg-[#B88E6A] hover:translate-x-2"}`}
+                    ? "bg-[#256D85] shadow-lg"
+                    : "hover:bg-[#2A9D8F] hover:translate-x-2"}`}
               >
                 <span className={`text-xl ${pathname === item.href ? "text-white" : "text-gray-300"} 
                   group-hover:text-white group-hover:scale-110 transition-transform`}>
